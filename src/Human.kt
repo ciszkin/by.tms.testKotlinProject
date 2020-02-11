@@ -7,12 +7,13 @@ class Human {
         fun sayID() = println("My ID is $studentID")
     }
 
-    inner class Teacher() {
+    inner class Teacher {
         var homeWorkID: Int? = null
+        var name = "Alex"
 
-        constructor(name: String?) : this() {
-            this@Human.name = name
-        }
+//        constructor(name: String?) : this() {
+//            this@Human.name = name
+//        }
 
         fun sayHello() = println("My name is $name")
 
