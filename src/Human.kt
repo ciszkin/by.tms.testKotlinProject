@@ -22,8 +22,8 @@ class Human {
 
 fun main() {
     val stud = Human.Student()
-    //val teacher = Human().Teacher()
-    val teacher = Human().Teacher("Alex")
+    val teacher = Human().Teacher()
+    //val teacher = Human().Teacher("Alex")
 
     stud.sayID()
     teacher.sayHello()
