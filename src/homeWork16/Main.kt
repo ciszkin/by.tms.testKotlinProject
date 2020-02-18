@@ -59,10 +59,10 @@ fun factorial(n: Int) : Long {
 fun getBoolean(n: Int) : String {
     val answer = StringBuilder()
     var divN = n
-    while(divN > 0) {
+    while(divN > 0) with(answer) {
         val reminder = divN%2
         divN /= 2
-        answer.insert(0,reminder)
+        insert(0,reminder)
     }
     return answer.toString()
 }
